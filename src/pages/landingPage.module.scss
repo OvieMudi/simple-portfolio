@@ -1,0 +1,165 @@
+.landingPage {
+  padding: 0 2rem;
+  .sub2 {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .intro {
+    min-height: 90vh;
+
+    .introContainer {
+      padding-top: 40vh;
+    }
+
+    .heading {
+      font-weight: 300;
+      font-size: 5.4rem;
+      margin-bottom: 2rem;
+    }
+
+    .description {
+      font-size: 5.4rem;
+      font-weight: 300;
+      line-height: inherit;
+      margin-bottom: 2rem;
+    }
+
+    .location {
+      opacity: 0.5;
+      margin: 1rem 0 2rem;
+
+      & > * {
+        vertical-align: middle;
+      }
+
+      .middot {
+        font-size: 2em;
+      }
+
+      & > * {
+        margin-right: 1.2rem;
+      }
+    }
+  }
+
+  .section {
+    margin: 25rem 0;
+    padding: 4rem 0;
+
+    &:first-of-type {
+      margin-top: 1rem;
+    }
+  }
+
+  .about {
+    p {
+      font-size: 3rem;
+      letter-spacing: normal;
+      font-weight: 300;
+      line-height: 1.45;
+      margin-bottom: 2rem;
+    }
+
+    .socialContainer {
+      img {
+        width: 3rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .projects {
+    .project {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgb(214, 214, 214);
+      padding: 2rem 1rem;
+
+      > p:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      span {
+        display: block;
+        margin-bottom: 1.5rem;
+      }
+
+      .projDescription {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .about,
+    .intro,
+    .sub2 {
+      text-align: center;
+    }
+  }
+}
+
+.actionsContainer {
+  & > a {
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #101010;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #101010;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  &_Alt {
+    color: #101010;
+    background-color: transparent;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+.bounce {
+  animation: poing 10s infinite linear;
+  position: relative;
+}
+
+@keyframes poing {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}

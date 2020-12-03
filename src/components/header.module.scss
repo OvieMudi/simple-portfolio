@@ -1,0 +1,57 @@
+$animate: all 0.25s ease-in-out;
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 4rem;
+  max-width: 1440px;
+  margin: auto;
+  background-color: #fff;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .logo {
+    min-width: 54px;
+    max-width: 9rem;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+
+    > :not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    li {
+      padding: 1.5rem 1rem;
+
+      a {
+        position: relative;
+        text-align: center;
+        transition: $animate;
+
+        &::before {
+          content: '';
+          position: absolute;
+          height: 4px;
+          background-color: rgba(0, 0, 0, 0.685);
+          bottom: -1rem;
+          width: 30%;
+          margin-top: 0.5rem;
+          transition: $animate;
+        }
+
+        &:hover {
+          &::before {
+            width: 100%;
+            // opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

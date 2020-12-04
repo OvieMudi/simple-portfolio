@@ -25,4 +25,4 @@ This repository contains code for my simple portfolio website built with [Gatsby
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
-Here is the live deployment.
+View the [live deployment](https://oviemudi.netlify.app) on Netlify.

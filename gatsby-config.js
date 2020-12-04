@@ -28,14 +28,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Fira Sans Condensed`,
-            variants: [`300`, `400`, `700`],
-          },
-        ],
+        fonts: [`Fira Sans Condensed\:300, 400, 700`],
       },
     },
     `gatsby-plugin-sass`,
